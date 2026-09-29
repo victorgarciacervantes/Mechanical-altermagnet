@@ -1,0 +1,117 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{smejkal2022}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=823d9feabb7a7062d2c6538620667d71}{%
+           family={Smejkal},
+           familyi={S\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=76c15d6c7f35d72d8456d2fdcd1bd9b2}{%
+           family={Sinova},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3e57ae30580d8854eecf61da9706dfbc}{%
+           family={Jungwirth},
+           familyi={J\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{0b5576dc78f5437b058d9c25d33b1f4d}
+      \strng{fullhash}{0b5576dc78f5437b058d9c25d33b1f4d}
+      \strng{fullhashraw}{0b5576dc78f5437b058d9c25d33b1f4d}
+      \strng{bibnamehash}{0b5576dc78f5437b058d9c25d33b1f4d}
+      \strng{authorbibnamehash}{0b5576dc78f5437b058d9c25d33b1f4d}
+      \strng{authornamehash}{0b5576dc78f5437b058d9c25d33b1f4d}
+      \strng{authorfullhash}{0b5576dc78f5437b058d9c25d33b1f4d}
+      \strng{authorfullhashraw}{0b5576dc78f5437b058d9c25d33b1f4d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review X}
+      \field{title}{Emerging research landscape of altermagnetism}
+      \field{volume}{12}
+      \field{year}{2022}
+      \field{pages}{040501}
+      \range{pages}{1}
+    \endentry
+    \entry{kim2025photonicaltermagnets}{misc}{}{}
+      \name{author}{5}{}{%
+        {{hash=a073a758f2219107fe83cdcc46b5203e}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Andrew\bibnamedelima Sungwook},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=6b855b18e81bffcea711d39127fc1f02}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Youqiang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=20c23086b82a75772bcde09a66eabb97}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Zhipei},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=9a7d3fc5df187db3aff017072539f65a}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Q-Han},
+           giveni={Q\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=76cfb255ea692fc0db4a4a3c091dea0c}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={Hyunyong},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{389791631a33a2dff830236aa4ef399a}
+      \strng{fullhash}{790864e58f0108e7e1058141df9f2e11}
+      \strng{fullhashraw}{790864e58f0108e7e1058141df9f2e11}
+      \strng{bibnamehash}{389791631a33a2dff830236aa4ef399a}
+      \strng{authorbibnamehash}{389791631a33a2dff830236aa4ef399a}
+      \strng{authornamehash}{389791631a33a2dff830236aa4ef399a}
+      \strng{authorfullhash}{790864e58f0108e7e1058141df9f2e11}
+      \strng{authorfullhashraw}{790864e58f0108e7e1058141df9f2e11}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{physics.optics}
+      \field{eprinttype}{arXiv}
+      \field{title}{Photonic Altermagnets: Magnetic Symmetries in Photonic Structures}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2506.23497
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2506.23497
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2506.23497
+      \endverb
+    \endentry
+  \enddatalist
+  \missing{visser2023}
+\endrefsection
+\endinput
+

@@ -1,0 +1,36 @@
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Altermagnets}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Non-reciprocity}{7}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Non-Hermitian physics}{8}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Synchronization}{9}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Methods}{11}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Actuators}{11}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Coupling with neighbours}{12}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Experimental setup}{13}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}General theoretical procedure}{14}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Multiple scale expansion}{16}{subsection.2.5}%
+\contentsline {section}{\numberline {3}One non-reciprocal unit}{19}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Theory}{19}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Hopf bifurcation}{21}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Experiments}{24}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Two non-reciprocal units}{26}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Theory}{26}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Experiments with same chirality}{31}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Altermagnet unit cell}{35}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Simulations}{38}{subsection.4.4}%
+\contentsline {section}{\numberline {5}1D chain}{39}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Theory}{39}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Experiment}{41}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Simulations}{43}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Cross cell}{45}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Ferromagnet cross cell}{46}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Altermagnet cross cell}{48}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Bilayer Lieb lattice}{52}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Simulations of the overdamped regime}{53}{subsection.7.1}%
+\contentsline {section}{\numberline {8}Conclusion}{54}{section.8}%
+\contentsline {section}{Appendices}{61}{section*.31}%
+\contentsline {section}{\numberline {A}Calibration of actuators}{61}{appendix.1.A}%
+\contentsline {section}{\numberline {B}Multiple scale expansion derivation}{61}{appendix.1.B}%
+\contentsline {section}{\numberline {C}Two units}{67}{appendix.1.C}%
+\contentsline {section}{\numberline {D}1D chain}{67}{appendix.1.D}%
+\contentsline {section}{\numberline {E}Dynamical matrix Lieb lattice}{71}{appendix.1.E}%

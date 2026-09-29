@@ -1,0 +1,20 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'master_thesis_article.blg'
+[228] biber-MSWIN64:342> INFO - === 
+[297] Biber.pm:421> INFO - Reading 'master_thesis_article.bcf'
+[458] Biber.pm:999> INFO - Using all citekeys in bib section 0
+[478] Biber.pm:4487> INFO - Processing section 0
+[492] Biber.pm:4678> INFO - Looking for bibtex file 'bibliography.bib' for section 0
+[614] bibtex.pm:1713> INFO - LaTeX decoding ...
+[771] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
+[1417] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1417] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1417] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[1417] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[1465] bbl.pm:676> INFO - Writing 'master_thesis_article.bbl' with encoding 'UTF-8'
+[1500] bbl.pm:779> INFO - Output to master_thesis_article.bbl
+[1501] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\profesor\AppData\Local\Temp\biber_tmp_iCdl\f4d088b3f9f145b5c3058da33afd57d4_1552.utf8, line 108, warning: undefined macro "June"
+[1501] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\profesor\AppData\Local\Temp\biber_tmp_iCdl\f4d088b3f9f145b5c3058da33afd57d4_1552.utf8, line 181, warning: 11 characters of junk seen at toplevel
+[1501] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\profesor\AppData\Local\Temp\biber_tmp_iCdl\f4d088b3f9f145b5c3058da33afd57d4_1552.utf8, line 215, warning: undefined macro "July"
+[1501] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\profesor\AppData\Local\Temp\biber_tmp_iCdl\f4d088b3f9f145b5c3058da33afd57d4_1552.utf8, line 318, warning: undefined macro "Sept"
+[1501] Biber.pm:134> INFO - WARNINGS: 4

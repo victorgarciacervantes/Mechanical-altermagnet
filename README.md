@@ -1,0 +1,2 @@
+# Mechanical altermagnet code
+

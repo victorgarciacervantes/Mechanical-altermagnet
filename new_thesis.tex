@@ -1,0 +1,323 @@
+\\documentclass[11pt, a4paper]{article} %tamaño mínimo de letra 11pto.
+
+\usepackage{graphicx} 
+%\usepackage[english]{babel} %Español 
+%\usepackage[utf8]{inputenc} %Para poder poner tildes
+\usepackage{vmargin} %Para modificar los márgenes
+\setmargins{2.5cm}{1.5cm}{16.5cm}{23.42cm}{10pt}{1cm}{0pt}{2cm}
+%margen izquierdo, superior, anchura del texto, altura del texto, altura de los encabezados, 
+% entre el texto y los encabezados, altura del pie de página, espacio entre el texto y el pie de página
+
+% introducido por mi 
+\usepackage{amsmath,amsfonts,amssymb} % ecuaciones
+\usepackage{siunitx}
+\usepackage{fancyhdr} % headers y footers
+\usepackage{esint} % integrales cerradas
+\usepackage{bbold} % para meter matriz identidad
+\usepackage{graphicx} % estos dos para una figura
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{pdfpages} % para incluir declaracion IA
+\usepackage{float}
+%\usepackage[numbers,sort&compress]{natbib} % for bibliography
+\usepackage[inkscape=false]{svg} % add svg files
+\usepackage{hyperref} % to add video
+\usepackage{tikz} % to generate plots 
+\usepackage{setspace} % to space out text lines
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+%\usepackage{standalone}
+\newcolumntype{C}{>{$}c<{$}}
+
+\usepackage[style=numeric,sorting=none, backend=biber]{biblatex}  % Load biblatex with the 'verbose' style for full citations in footnotes
+\addbibresource{bibliography.bib}
+
+\setlength{\parskip}{\baselineskip}
+\renewcommand{\baselinestretch}{1.2}
+
+\newcommand{\xv}{\vec{x}}
+\newcommand{\yv}{\vec{y}}
+\newcommand{\xd}{\dot{x}}
+\newcommand{\xdd}{\ddot{x}}
+\newcommand{\yd}{\dot{y}}
+\newcommand{\ydd}{\ddot{y}}
+\newcommand{\bigO}{\mathcal{O}}
+\newcommand{\Th}{\theta}
+
+% \usetikzlibrary{decorations.markings,arrows.meta} % for big arrows
+% \usetikzlibrary{calc}
+% \tikzset{
+%     >={Stealth[length=3pt]}, % Standard, clean arrowhead
+%     % Custom style to place a single arrow at the halfway point of a path
+%     cleanflow/.style={
+%         decoration={
+%             markings,
+%             mark=at position 0.5 with {\arrow{>}}
+%         },
+%         postaction={decorate}
+%     },
+%     stable/.style={line width=1.5pt, draw=black},
+%     thinarc/.style={line width=0.7pt, draw=black!90},
+%     textlabel/.style={font=\small\selectfont, text=black}
+% }
+
+% \tikzset{
+%   flow/.style={
+%     decoration={
+%       markings,
+%       mark=at position #1 with {\arrow[scale=1.3]{stealth}}
+%     },
+%     postaction={decorate}
+%   },
+%   flow/.default=0.55
+% }
+
+% % Layer dimensions
+% \newcommand{\layerW}{3.0}   % width
+% \newcommand{\layerH}{0.45}  % height of magnetic layers
+% \newcommand{\barrH}{0.30}   % height of tunnel barrier
+
+% % Colors
+% \definecolor{ferrocolor}{RGB}{173, 216, 230}   % light blue – ferromagnet
+% \definecolor{barrcolor}{RGB}{255, 228, 196}    % bisque – insulating barrier
+
+% \tikzset{
+%   mtjlayer/.style={draw=black, thick, minimum width=\layerW cm, minimum height=\layerH cm, inner sep=0},
+%   barrier/.style={draw=black, thick, minimum width=\layerW cm, minimum height=\barrH cm,
+%                   inner sep=0, fill=barrcolor},
+%   magarrow/.style={-{Stealth[length=6pt, width=4pt]}, ultra thick, black},
+% }
+
+% \newcommand{\drawMTJ}[4]{
+%   % bottom ferromagnet (free layer)
+%   \node[mtjlayer, fill=ferrocolor] at (#1, 0) {};
+%   % tunnel barrier
+%   \node[barrier] at (#1, \layerH*0.5 + \barrH*0.5) {};
+%   % top ferromagnet (reference layer)
+%   \node[mtjlayer, fill=ferrocolor] at (#1, \layerH + \barrH) {};
+
+%   % Arrow in top (reference) layer
+%   \draw[magarrow]
+%     ({#1 - 0.55*#2}, {\layerH + \barrH})
+%     -- ({#1 + 0.55*#2}, {\layerH + \barrH});
+
+%   % Arrow in bottom (free) layer
+%   \draw[magarrow]
+%     ({#1 - 0.55*#3}, 0)
+%     -- ({#1 + 0.55*#3}, 0);
+
+%   % Layer labels
+%   \node[right, font=\small] at ({#1 + \layerW*0.5}, {\layerH + \barrH}) {Fixed};
+%   \node[right, font=\small] at ({#1 + \layerW*0.5}, {\layerH*0.5 + \barrH*0.5}) {Barrier};
+%   \node[right, font=\small] at ({#1 + \layerW*0.5}, 0) {Free};
+
+%   % Bit label below
+%   \node[font=\large\bfseries] at (#1, -0.6) {#4};
+% }
+
+% \newcommand{\yinyanglobe}[3]{
+%     \begin{scope}[rotate=#1]
+%         \fill[#2] (0,0) 
+%             arc[start angle=-90, end angle=90, radius=0.5cm] 
+%             arc[start angle=90, end angle=-90, radius=1cm]
+%             arc[start angle=90, end angle=270, radius=0.5cm] -- cycle;
+            
+%         \fill[#3] (0, 1) circle (0.25cm);
+%     \end{scope}
+% }
+
+\begin{document}
+Hello
+
+\subsection{Theory}
+In this section we consider the simplest model that captures the essence of non-hermitian behaviour: 2 linear actuators 
+coupled non-reciprocally. We denote the two degrees of freedom as $x$ and $y$, which correspond to the displacement of the 
+actuators from the equilibrium position. We choose the specfici non-reciprocal interaction to be odd elasticity. 
+One can interpret the system as a 2D oscillator. 
+The equations of motion are
+    \begin{align}
+        \xdd +k_0x +  \gamma \xd + k_cx^3 + k_ay = 0 \label{eq_1osc_x}\\ 
+        \ydd +k_0y +  \gamma \yd + k_cy^3 - k_ax = 0 \label{eq_1osc_y}
+    \end{align}
+[should I add nonlinear cubic term to stabilize??]
+where \( k_0 \) is the harmonic bound strength, \( \gamma \) is the damping coefficient, $k_c$ is a nonlinear saturation coefficient 
+that stabilizes the dynamics, and \( k_a \) is the non-reciprocal coupling strength, also called the activity or gain. 
+%The parameter \( \epsilon \ll 1 \) indicates that both damping and non-reciprocal coupling are weak perturbations to the harmonic oscillator.
+There are different ways to analyse the system. One way is to plug in the plane wave ansatz 
+\( x(t) = X e^{-iEt} \) and \( y(t) = Y e^{-iEt} \) in the linearized equations, and solve for the frequencies/energies $E$. 
+Another method is to perform the multiple scale expansion, as explained in the previous section.
+    The energies are 
+    \begin{align}
+        \text{clockwise:} \; E_1 = -\frac{i}{2}\left(\gamma + \frac{k_a}{\sqrt{k}}\right) \label{eq_1osc_e1}\\
+        \text{counterclockwise:} \; E_2 = \frac{i}{2}\left(-\gamma + \frac{k_a}{\sqrt{k}}\right) \label{eq_1osc_e2}
+    \end{align}
+    and the eigenvectors are 
+    \begin{align}
+        \text{clockwise} \; v_1 = \begin{pmatrix}
+        1 \\ -i
+        \end{pmatrix} \label{eq_1osc_v1}\\
+        \text{counterclockwise} \; v_2 = \begin{pmatrix}
+        1 \\ i
+        \end{pmatrix} \label{eq_1osc_v2}.
+    \end{align}
+    On the one hand, $E_1$ has 2 eigenvectors in which the oscillator rotates clockwise in the plane. 
+    What distinguishes these eigenvectors is their initial phase, basically a global phase. As the time evolution is given by the 
+    phase factor $e^{-iEt}$, these modes are exponentially suppressed as time evolves.
+    On the other hand, $E_2$ has 2 eigenvectos that rotate counterclockwise, each with a different initial phase. 
+    There are two regimes for the system described by equations \eqref{eq_1osc_x} and \eqref{eq_1osc_y}. 
+    If $|k_a| < \gamma \sqrt{k}$, so for low values of activity, the energies have all a negative imaginary part. 
+    This means that the oscillations of the actuators are exponentially damped, because friction dominates. The origin is a stable fixed point, 
+    so the system becomes at rest and there is no motion. However, if the activity $|k_a|$ is increased, the system undergoes a supercritical 
+    Hopf bifurcation. For $|k_a| > \gamma \sqrt{k}$, the origin is unstable and a stable limit cycle appears. The cubic 
+    term $k_cx^3$ is necessary for the limit cycle to be stable. The sign of the activity $k_a$ determines the direction of 
+    the limit cycle. If $k_a>0$, the limit cycle has counterclockwise direction, and if $k_a<0$, it has clockwise direction. 
+    This feature can be seen in equations \eqref{eq_1osc_e1} and \eqref{eq_1osc_e2} by changing the sign of $k_a$. If the sign is changed, 
+    the modes that can have the limit cycles, only for sufficiently large activity, are the ones corresponding to the clockwise chirality. 
+
+    By plotting the trajectory of the system in state space, i.e. in the $x$-$y$ plane, we can see the effect of the non-reciprocal coupling.
+    The system traces out limit cycles above the Hopf bifurcation. Limit cycles are isolated closed trajectories. 
+    The fact that they are closed means that they are periodic solutions. They are usually defined in phase space, 
+    and they are best visualized when the phase space is two-dimensional. However, our system 
+    of equations \eqref{eq_1osc_x} and \eqref{eq_1osc_y} has actually four degrees of freedom: 
+    the displacements $x$ and $y$, and their velocities $\xd$ and $\yd$. The phase space is thus four-dimensional.
+    However, we can project the trajectories onto the $x$-$y$ plane, and we will see that they also trace out limit cycles there.
+    Systems with negative chirality trace out limit cycles in clockwise direction, 
+    while systems with positive chirality trace out limit cycles in counterclockwise direction. 
+    This system's limit cycles are vey specific. From the eigenvector formulas \eqref{eq_1osc_v1} and \eqref{eq_1osc_v2}, 
+    we can observe that the two linear actuators differ in value by a constant factor $\pm i = e^{\pm i\pi/2}$. 
+    It means that the two actuators have a phase difference of $\pm \pi/2$, and they are said to be in quadrature. 
+    If the actuators have the same amplitude, the limit cycles in this particular case are circles. If the actuators 
+    have the same amplitude but other phase difference, they will trace out ellipses. 
+
+    In conclusion, we use odd elasticity (or non-reciprocity in general) between two linear actuators to achieve stable limit cycles 
+    that can oscillate either in clockwise or counterclockwise direction, and they can be used to replace the spin. We refer to the 
+    mechanical analogue of spin as oscillator chirality or mechanical spin. 
+
+% \begin{figure}[htbp]
+%     \centering
+%     % Suppress automatic sub-labels (a), (b), etc. directly below the panels
+%     \captionsetup[subfigure]{labelformat=empty}
+    
+%     % =========================================================================
+%     % LEFT COLUMN: 3 SUBFIGURES STACKED VERTICALLY
+%     % =========================================================================
+%     \begin{minipage}[b]{0.48\textwidth}
+%         \centering
+        
+%         % Subfigure 1 (Top Left)
+%         \begin{subfigure}[b]{\textwidth}
+%              \begin{tikzpicture}[scale=0.4]
+%     \useasboundingbox (-2.2, -2.5) rectangle (2.2, 1.5);
+%         %\draw[red, dashed] (current bounding box.south west) rectangle (current bounding box.north east);
+%   % Trajectory from bottom-left, spirals into fixed point
+%   \draw[thick, flow=0.45]
+%     (-2.0,-1.0) .. controls (-1.5,-0.8) and (-1.2, 0.4) ..
+%     (-0.9, 0.55) .. controls (-0.5, 0.75) and ( 0.1, 0.5) ..
+%     ( 0.25, 0.15) .. controls ( 0.35,-0.1) and ( 0.2,-0.3) ..
+%     ( 0.0,-0.25) .. controls (-0.15,-0.1) and (-0.05, 0.0) ..
+%     (-0.02, 0.0);
+
+%   % Second trajectory from top-right, spirals into fixed point
+%   \draw[thick, flow=0.45]
+%     ( 2.0, 1.0) .. controls ( 1.5, 0.8) and ( 1.2,-0.4) ..
+%     ( 0.9,-0.55) .. controls ( 0.5,-0.75) and (-0.1,-0.5) ..
+%     (-0.25,-0.15) .. controls (-0.35, 0.1) and (-0.2, 0.3) ..
+%     ( 0.0, 0.25) .. controls ( 0.15, 0.1) and ( 0.05, 0.0) ..
+%     ( 0.02, 0.0);
+
+%   % Stable fixed point (filled dot)
+%   \filldraw (0,0) circle (2pt);
+
+%   % Label
+%   \node at (0,-2.4) {1};
+
+%             \end{tikzpicture}
+%             Hopf
+% \begin{tikzpicture}[scale=0.4]
+%         \useasboundingbox (-2.2, -2.5) rectangle (2.2, 1.5);
+%         %\draw[red, dashed] (current bounding box.south west) rectangle (current bounding box.north east);
+%   % Stable limit cycle (thicker, radius 1 cm)
+%   \draw[line width=2pt, flow=0.25] (0,0) circle (1.0cm);
+
+%   % Trajectory spiralling outward from near origin to limit cycle
+%   \draw[thick, flow=0.5]
+%     (0.15, 0.0)
+%     .. controls ( 0.18, 0.30) and (-0.25,  0.55) ..
+%     (-0.5,  0.35)
+%     .. controls (-0.80, 0.15) and (-0.90, -0.35) ..
+%     (-0.5, -0.80);   % ends near the circle r ≈ 1
+
+%   % Trajectory spiralling inward from outside to limit cycle
+%   \draw[thick, flow=0.45]
+%     ( 1.80,-0.60)
+%     .. controls ( 1.40,-1.60) and ( 0.40,-2.00) ..
+%     (-0.60,-1.60)
+%     .. controls (-1.40,-1.20) and (-1.30,-0.20) ..
+%     (-1.00, 0.30);   % ends near the circle r ≈ 1
+
+%   % Unstable fixed point (open dot)
+%   \filldraw[fill=white, draw=black, thick] (0,0) circle (2pt);
+
+%   % Label
+%   \node at (0,-2.4) {2};
+
+% \end{tikzpicture}
+%             \caption{}
+%             \label{fig:panel_a}
+%         \end{subfigure}
+        
+%         %\vspace{0.5cm} % Vertical gap
+        
+%         % Subfigure 2 (Middle Left)
+%         \begin{subfigure}[b]{\textwidth}
+%             \includegraphics[width=0.7\textwidth]{Figures one unit/limit_cycle_example.pdf}
+%             \caption{}
+%             \label{fig:panel_b}
+%         \end{subfigure}
+        
+%     \end{minipage}
+%     \hfill
+%     % =========================================================================
+%     % RIGHT COLUMN: 2 SUBFIGURES STACKED VERTICALLY
+%     % =========================================================================
+%     \begin{minipage}[b]{0.48\textwidth}
+%         \centering
+        
+%         % Subfigure 4 (Top Right)
+%         \begin{subfigure}[b]{\textwidth}
+%             \centering
+%             \includegraphics[width=0.95\textwidth]{Figures one unit/global_scaling_profiles_stacked.pdf}
+%             \caption{}
+%             \label{fig:panel_d}
+%         \end{subfigure}
+        
+%         \vspace{0.8cm} % Adjust gap to vertically balance against the left column
+        
+%         % Subfigure 5 (Bottom Right)
+%         \begin{subfigure}[b]{\textwidth}
+%             \centering
+%             \includegraphics[width=0.95\textwidth]{Figures one unit/amplitude_scaling_Hopf.pdf}
+%             \caption{}
+%             \label{fig:panel_e}
+%         \end{subfigure}
+%     \end{minipage}
+
+%     % =========================================================================
+%     % MAIN UNIFIED CAPTION
+%     % =========================================================================
+%     \caption{Comprehensive structural and dynamical analysis of the classical altermagnetic analog lattice. Left column: (a) Structural topology of the active lattice units, (b) corresponding transient phase slip profile, and (c) additional left-side metric. Right column: Extracted global numerical scaling trends showcasing (d) limit cycle amplitude variations and (e) linear frequency scaling response under continuous activity sweeps.}
+%     \label{fig:master_thesis_5_panel_compiled}
+% \end{figure}
+
+
+
+    \section{Experiments}
+
+    The regime below the Hopf bifurcation, where the system goes to rest, is not interesting, so we focus on the regime 
+    above the Hopf bifurcation where the system traces out limit cycles. There is only one parameter to control in the experiments, 
+    and that is the activity $k_a$. The rest of coupling coefficients in equations \eqref{eq_1osc_x} and \eqref{eq_1osc_y} are 
+    determined by the actuators' mechanical properties, which we don't change. We can decompose the analysis of the limit cycles into two: 
+    the phase and the amplitude. 
+
+
+\end{document}

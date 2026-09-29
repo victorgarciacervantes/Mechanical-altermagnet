@@ -1,0 +1,21 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'master_thesis_slides.blg'
+[186] biber-MSWIN64:342> INFO - === 
+[251] Biber.pm:421> INFO - Reading 'master_thesis_slides.bcf'
+[439] Biber.pm:1002> INFO - Found 3 citekeys in bib section 0
+[463] Biber.pm:4487> INFO - Processing section 0
+[478] Biber.pm:4678> INFO - Looking for bibtex file 'bibliography.bib' for section 0
+[575] bibtex.pm:1713> INFO - LaTeX decoding ...
+[671] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
+[782] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[782] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[783] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[783] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[793] bbl.pm:676> INFO - Writing 'master_thesis_slides.bbl' with encoding 'UTF-8'
+[797] bbl.pm:779> INFO - Output to master_thesis_slides.bbl
+[798] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\profesor\AppData\Local\Temp\biber_tmp_4liM\f4d088b3f9f145b5c3058da33afd57d4_20604.utf8, line 108, warning: undefined macro "June"
+[798] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\profesor\AppData\Local\Temp\biber_tmp_4liM\f4d088b3f9f145b5c3058da33afd57d4_20604.utf8, line 181, warning: 11 characters of junk seen at toplevel
+[798] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\profesor\AppData\Local\Temp\biber_tmp_4liM\f4d088b3f9f145b5c3058da33afd57d4_20604.utf8, line 215, warning: undefined macro "July"
+[798] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\profesor\AppData\Local\Temp\biber_tmp_4liM\f4d088b3f9f145b5c3058da33afd57d4_20604.utf8, line 318, warning: undefined macro "Sept"
+[798] Biber.pm:132> WARN - I didn't find a database entry for 'visser2023' (section 0)
+[798] Biber.pm:134> INFO - WARNINGS: 5

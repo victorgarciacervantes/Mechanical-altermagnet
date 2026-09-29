@@ -1,0 +1,130 @@
+
+% Definicion de notacion para incluir en ficheros TeX,LaTeX
+\newcommand{\curl}[1]{\mbox{$curl \: #1 $}}
+%\newcommand{\vectort}[1]{\mbox{$\bar{#1}$}} % Vector
+%\newcommand{\kkvec}[1]{\mbox{$\bar{#1}$}} % Vector
+\newcommand{\vectort}[1]{\mathbf{#1}}
+\newcommand{\vectorts}[1]{\boldsymbol{#1}}
+%\newcommand{\tensor}[1]{\mbox{$\underline{\underline{#1}}$}}
+%
+%\newcommand{\con}[1]{\bar{#1}} % Magnitud escalar conjugada
+\newcommand{\con}[1]{{#1}^\ast} % Magnitud escalar conjugada
+\renewcommand{\vec}[1]{\mathbf{#1}} % Magnitud vectorial
+\newcommand{\vecc}[1]{\mathbf{\bar{#1}}} % Magnitud vectorial conjugada
+\newcommand{\vecc}[1]{\mathbf{#1}^\ast} % Magnitud vectorial conjugada
+\newcommand{\vecs}[1]{\boldsymbol{#1}} % Magnitud vectorial (symbol)
+\newcommand{\veccs}[1]{\boldsymbol{#1}^\ast} % Magnitud vectorial conjugada (symbol)
+%\newcommand{\veccs}[1]{\boldsymbol{\bar{#1}}} % Magnitud vectorial conjugada (symbol)
+\newcommand{\tensor}[1]{\mbox{$\bar{\bar{#1}}$}} % Magnitud tensorial
+\newcommand{\vnormal}[1]{\vec{\hat{#1}}} % Unit normal
+\newcommand{\vsnormal}[1]{\vecs{\hat{#1}}} % Unit normal
+\newcommand{\normal}{\vnormal{n}} % Unit normal 
+\newcommand{\normalz}{\vnormal{z}} % Unit normal 
+%\newcommand{\normal}{\vec{\hat{n}}} % Unit normal
+\newcommand{\tauvec}{\vecs{\hat{\tau}}} % tau normal
+\newcommand{\im}{j} % Imaginary unit
+\newcommand{\xunit}{\vnormal{x}}
+\newcommand{\yunit}{\vnormal{y}}
+\newcommand{\zunit}{\vnormal{z}}
+\newcommand{\runit}{\vnormal{r}}
+\newcommand{\thetaunit}{\vsnormal{\theta}}
+\newcommand{\phiunit}{\vsnormal{\phi}}
+% \newcommand{\oiint}{\mathop{{\int\!\!\!\!\!\int}\mkern-21mu \bigcirc}} % USAR mejor package wasysym
+
+\newcommand{\Hcurl}{\vec{H}(\text{curl})} % Notacion para H(curl) space
+\newcommand{\Hdiv}{\vec{H}(\text{div})} % Notacion para H(div) space
+
+\newcommand{\coefr}{\Gamma} % asi para coef reflexion con notacion de \Gamma 
+%\newcommand{\coefr}{\rho} % asi para coef reflexion con notacion de \rho
+\newcommand{\znorm}[1]{\bar{#1}} % notacion impedancia normalizada
+
+\DeclareMathOperator{\real}{real}
+\DeclareMathOperator{\imag}{imag}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\sinc}{sinc}
+
+
+%\newcommand{\abs}[1]{\left|{#1}\right|}
+\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+
+\DeclareMathOperator{\atan}{atan}
+
+% Number sets
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+
+\newcommand*{\units}[1]{\ensuremath{\;\text{#1}}}
+\newcommand*{\Ohm}{\units{$\Omega$}}
+\newcommand*{\nrm}[1]{\overline{#1}}
+
+\newcommand{\fase}[1]{\angle{#1}}
+\newcommand{\modarg}[2]{\ensuremath{#1\fase{#2}}}%
+\newcommand{\modargrad}[2]{\modarg{#1}{#2\,\text{rad}}}%
+\newcommand{\modargdeg}[2]{\modarg{#1}{#2^\circ}}%
+
+\newcommand{\ang}[1]{#1^\circ}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Definiciones especificas
+\newcommand{\vE}{\vec{E}}
+\newcommand{\ve}{\vec{e}}
+\newcommand{\vH}{\vec{H}}
+\newcommand{\vh}{\vec{h}}
+\newcommand{\vD}{\vec{D}}
+\newcommand{\vB}{\vec{B}}
+\newcommand{\vJ}{\vec{J}}
+\newcommand{\vM}{\vec{M}}
+\newcommand{\vA}{\vec{A}}
+\newcommand{\vF}{\vec{F}}
+\newcommand{\vR}{\vec{R}}
+\newcommand{\vRp}{\vec{R^\prime}}
+\newcommand{\vr}{\vec{r}}
+\newcommand{\vrp}{\vec{r^\prime}}
+\newcommand{\vx}{\vec{x}}
+\newcommand{\vX}{\vec{X}}
+
+\newcommand{\rp}{r^\prime}
+\newcommand{\xp}{x^\prime}
+\newcommand{\yp}{y^\prime}
+\newcommand{\zp}{z^\prime}
+
+
+
+\newcommand{\vN}{\vec{N}}
+\newcommand{\vZ}{\vec{Z}}
+
+
+
+
+\newcommand{\vU}{\vec{U}} % Used e.g.,  for vectors U and V of ACA
+\newcommand{\vV}{\vec{V}}
+
+
+\newcommand{\cv}[1]{\lbrace #1 \rbrace} % Column vector
+
+
+\newcommand{\vS}{\vec{S}}
+\newcommand{\vk}{\vec{k}}
+\newcommand{\vkunit}{\vec{\hat{k}}}
+\newcommand{\vgamma}{\vecs{\gamma}}
+\newcommand{\vgammaunit}{\vecs{\hat{\gamma}}}
+\newcommand{\vzeta}{\vnormal{\zeta}}
+
+\newcommand{\ep}{\varepsilon}
+\newcommand{\epr}{\varepsilon_r}
+\newcommand{\epeff}{\varepsilon_{\text{eff}}}
+\newcommand{\epreff}{{\varepsilon_r}_{\text{eff}}}
+
+\newcommand{\vnabla}{\vecs{\nabla}}
+\newcommand{\vPsi}{\vecs{\Psi}}
+
+\newcommand{\vTr}{\vecs{\tau}} % translational operator de FMM
+
+
+% Definiciones especificas curso indra "sistemas de navegacion
+% terrestres"
+
+\newcommand{\lat}{\Phi} % definicion de latitud
+\newcommand{\lon}{\lambda} % definicion de longitudook

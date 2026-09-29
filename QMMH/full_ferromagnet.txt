@@ -1,0 +1,16 @@
+use math/*;
+use qmmh/*;
+
+
+# Calculates the coil power, expected to have a range between -1.0 (retract) and 1.0 (push)
+pub fn coil_power() -> pwr_a, pwr_b, pwr_c, pwr_d {
+                   
+gain = 7;  # gain parameter
+k0 = 1 ;  # onsite stiffness
+
+    pwr_a = 0;
+    pwr_b = 0;
+    pwr_c = -k0*pos_c + gain*pos_d;
+    pwr_d = -k0*pos_d - gain*pos_c;
+ 
+}

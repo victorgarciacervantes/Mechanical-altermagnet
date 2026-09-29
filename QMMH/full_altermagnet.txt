@@ -1,0 +1,74 @@
+use math/*;
+use qmmh/*;
+
+
+# Calculates the coil power, expected to have a range between -1.0 (retract) and 1.0 (push)
+pub fn coil_power() -> pwr_a, pwr_b, pwr_c, pwr_d {
+
+gain = 4;  # gain parameter
+k0 = 2;   # onsite stiffness
+
+    pwr_a = 0;
+    pwr_b = 0;
+    pwr_c = -k0*pos_c - gain*pos_d;
+    pwr_d = -k0*pos_d + gain*pos_c;
+
+
+#pos_chir = (0,1,2,7,8,9,14,15,16,21,22,23)
+
+
+	if chain_position == 0 {   # change chirality for other sublattice
+
+    pwr_c = -k0*pos_c + gain*pos_d;
+    pwr_d = -k0*pos_d - gain*pos_c; 
+}
+
+	if chain_position == 1 {   # change chirality for other sublattice
+
+    pwr_c = -k0*pos_c + gain*pos_d;
+    pwr_d = -k0*pos_d - gain*pos_c; 
+}
+
+	if chain_position == 2 {   # change chirality for other sublattice
+
+    pwr_c = -k0*pos_c + gain*pos_d;
+    pwr_d = -k0*pos_d - gain*pos_c; 
+}
+
+	if chain_position == 7 {   # change chirality for other sublattice
+
+    pwr_c = -k0*pos_c + gain*pos_d;
+    pwr_d = -k0*pos_d - gain*pos_c; 
+}
+
+	if chain_position == 8 {   # change chirality for other sublattice
+
+    pwr_c = -k0*pos_c + gain*pos_d;
+    pwr_d = -k0*pos_d - gain*pos_c; 
+}
+
+	if chain_position == 9 {   # change chirality for other sublattice
+
+    pwr_c = -k0*pos_c + gain*pos_d;
+    pwr_d = -k0*pos_d - gain*pos_c; 
+}
+
+	if chain_position == 14 {   # change chirality for other sublattice
+
+    pwr_c = -k0*pos_c + gain*pos_d;
+    pwr_d = -k0*pos_d - gain*pos_c; 
+}
+
+	if chain_position == 15 {   # change chirality for other sublattice
+
+    pwr_c = -k0*pos_c + gain*pos_d;
+    pwr_d = -k0*pos_d - gain*pos_c; 
+}
+
+	if chain_position == 16 {   # change chirality for other sublattice
+
+    pwr_c = -k0*pos_c + gain*pos_d;
+    pwr_d = -k0*pos_d - gain*pos_c; 
+}
+
+}

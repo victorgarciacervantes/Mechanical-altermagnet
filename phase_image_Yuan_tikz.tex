@@ -1,0 +1,58 @@
+\documentclass[tikz,border=10pt]{standalone}
+\usetikzlibrary{shapes.geometric}
+
+\begin{document}
+\begin{tikzpicture}[
+    curve/.style={line width=1.5pt, color=blue!70!black},
+    axis/.style={color=gray!40, ->, >=stealth, thin},
+    gridlabel/.style={font=\sffamily\small, color=black!80}
+]
+
+    % Grid spacing parameter
+    \def\spacing{3.0}
+
+    % 1. Phase = 0 degrees (Straight Line y = x)
+    \begin{scope}[xshift=0*\spacing cm]
+        \draw[axis] (-1.2,0) -- (1.2,0);
+        \draw[axis] (0,-1.2) -- (0,1.2);
+        \draw[curve] (-1,-1) -- (1,1);
+        \node[gridlabel, below=1.4cm] at (0,0) {$0^\circ$ or $360^\circ$};
+    \end{scope}
+
+    % 2. Phase = 45 degrees (Tilted Narrow Ellipse)
+    \begin{scope}[xshift=1*\spacing cm]
+        \draw[axis] (-1.2,0) -- (1.2,0);
+        \draw[axis] (0,-1.2) -- (0,1.2);
+        \draw[curve, domain=0:360, samples=100] 
+            plot ({cos(\x)}, {cos(\x + 45)});
+        \node[gridlabel, below=1.4cm] at (0,0) {$45^\circ$ or $315^\circ$};
+    \end{scope}
+
+    % 3. Phase = 90 degrees (Perfect Circle)
+    \begin{scope}[xshift=2*\spacing cm]
+        \draw[axis] (-1.2,0) -- (1.2,0);
+        \draw[axis] (0,-1.2) -- (0,1.2);
+        \draw[curve, domain=0:360, samples=100] 
+            plot ({cos(\x)}, {cos(\x + 90)});
+        \node[gridlabel, below=1.4cm] at (0,0) {$90^\circ$ or $270^\circ$};
+    \end{scope}
+
+    % 4. Phase = 135 degrees (Opposite Tilted Narrow Ellipse)
+    \begin{scope}[xshift=3*\spacing cm]
+        \draw[axis] (-1.2,0) -- (1.2,0);
+        \draw[axis] (0,-1.2) -- (0,1.2);
+        \draw[curve, domain=0:360, samples=100] 
+            plot ({cos(\x)}, {cos(\x + 135)});
+        \node[gridlabel, below=1.4cm] at (0,0) {$135^\circ$ or $225^\circ$};
+    \end{scope}
+
+    % 5. Phase = 180 degrees (Straight Line y = -x)
+    \begin{scope}[xshift=4*\spacing cm]
+        \draw[axis] (-1.2,0) -- (1.2,0);
+        \draw[axis] (0,-1.2) -- (0,1.2);
+        \draw[curve] (-1,1) -- (1,-1);
+        \node[gridlabel, below=1.4cm] at (0,0) {$180^\circ$};
+    \end{scope}
+
+\end{tikzpicture}
+\end{document}

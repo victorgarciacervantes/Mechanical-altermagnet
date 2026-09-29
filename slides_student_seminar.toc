@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Wave propagation}{3}{0}{1}
+\beamer@sectionintoc {2}{Altermagnets}{11}{0}{2}
+\beamer@sectionintoc {3}{Non-hermiticity}{20}{0}{3}
+\beamer@sectionintoc {4}{Summary}{32}{0}{4}

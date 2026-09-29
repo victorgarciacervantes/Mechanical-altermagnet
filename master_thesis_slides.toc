@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Altermagnets}{2}{0}{1}
+\beamer@sectionintoc {2}{Metamaterial setup}{13}{0}{2}
+\beamer@sectionintoc {3}{Two units}{29}{0}{3}
+\beamer@sectionintoc {4}{Chain}{31}{0}{4}
+\beamer@sectionintoc {5}{Lieb lattice}{35}{0}{5}
+\beamer@sectionintoc {6}{Conclusions}{39}{0}{6}
