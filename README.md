@@ -1,2 +1,2 @@
-# Mechanical altermagnet code
+# Mechanical altermagnet 
 
